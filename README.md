@@ -17,16 +17,16 @@ make -j 8
 
 # Options
 
--f / --fullscreen : start in fullscreen mode
--g / --gravity    : apply gravity to the entities
--h / --help       : print the help
+* -f / --fullscreen : start in fullscreen mode
+* -g / --gravity    : apply gravity to the entities
+* -h / --help       : print the help
 
 # Controls
 
-Q - quit
-Y - confirm quitting
-N - deny quitting
-F - toggle fullscreen
+* Q - quit
+* Y - confirm quitting
+* N - deny quitting
+* F - toggle fullscreen
 
 # TODOs
 
