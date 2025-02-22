@@ -9,7 +9,7 @@
 # Installation
 
 ```bash
-git clone --branch=TODO --depth=1 https://github.com/RichardSartori/TODO
+git clone --branch=main --depth=1 https://github.com/RichardSartori/multithreaded_raylib_base
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j 8
@@ -30,19 +30,18 @@ make -j 8
 
 # TODOs
 
-- push to github
 - add entities, physics and collisions
 - make the entities bounce on the edge of the screen
 - add audio thread, play sound when entities collide
-- switch to double buffer technique (avoid mutexes)
-- make the update thread use std::chrono for its delta_time
+- switch to triple buffer technique + try to avoid mutexes
+- make the update thread use std::chrono for its delta_time and remove SetTargetFPS
 - see [this video](https://youtu.be/bBFWtnqQnQU?si=LwdXE1duTNB5k-Dk) and check
 - check that there is no 100% CPU usage
 - `grep TODO` and check
 - add ability to drag and drop entities
 - mail The Cherno
 
-Sorry for bad writing, English is not my first language (baguette œuf fromage oui oui I'm French). I'm Richard Sartori, and I come from a very low level C background, but I really enjoy C++ and I've had a Rust formation, which is a language I really like as well. I'm a huge fan of your videos, I find them very educational and easy to understand. I started learning C++ watching your videos, as well as those of OneLoneCoder. Here is my first attempt at creating a multithreaded graphical application using raylib. There aren't many features, but I think its a good base. I won't brag about how perfect it is ;-), my opinion is highly subjective and not very much informed, that is why I would like to have yours. I watched "5 MOST COMMON MISTAKES in my Code Review series" and applied every recommandation as best as I could. I'm sure you'll still have a lot of useful advice, so please feel free to roast me, everyone watching you (including me) is here to learn and have some fun :-).
+Sorry for bad writing, English is not my first language (baguette œuf fromage oui oui I'm French). I'm Richard Sartori, and I come from a very low level C background, but I really enjoy C++ and I've had a Rust formation, which is a language I really like as well. I'm a huge fan of your videos, I find them very educational and easy to understand. I started learning C++ watching your videos, as well as those of OneLoneCoder. Here is my first attempt at creating a multithreaded graphical application using raylib. There aren't many features, but I think its a good base. I won't brag about how perfect it is ;-), my opinion is highly subjective and not very much informed, that is why I would like to have yours. I watched "MOST COMMON Programming Mistakes" and applied every recommandation as best as I could. I'm sure you'll still have a lot of useful advice, so please feel free to roast me, everyone watching you (including me) is here to learn and have some fun :-).
 
 # Interrogations
 
