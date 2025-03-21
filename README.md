@@ -34,6 +34,9 @@ make -j 8
 - make the entities bounce on the edge of the screen
 - add audio thread, play sound when entities collide
 - switch to triple buffer technique + try to avoid mutexes
+  - [blogpost](https://www.anandtech.com/show/2794/2)
+  - [deeper dive](https://github.com/remis-thoughts/blog/blob/master/triple-buffering/src/main/md/triple-buffering.md)
+  - [possible implementation](https://github.com/p4checo/triplebuffer-sync)
 - make the update thread use std::chrono for its delta_time and remove SetTargetFPS
 - see [this video](https://youtu.be/bBFWtnqQnQU?si=LwdXE1duTNB5k-Dk) and check
 - check that there is no 100% CPU usage
